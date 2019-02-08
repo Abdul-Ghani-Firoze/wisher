@@ -5,4 +5,6 @@ Wisher is a simple wish list application built using:
 
 Import wisher.sql to your MySQL server and then configure codeigniter/config/database.php with your custom settings
 
-eg $db['default']['username'] = 'user_name'; $db['default']['database'] = 'db_name';
+eg: 
+$db['default']['username'] = 'user_name'; 
+$db['default']['database'] = 'db_name';
