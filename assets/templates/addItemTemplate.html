@@ -1,0 +1,37 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <form>
+            <div class="modal-header">						
+                <h4 class="modal-title">Add item</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">	
+                <input type="hidden" name="listId" id="listId" value='<?php echo $this->session->listId ?>'>
+                <div class="form-group">
+                    <label>Title</label>
+                    <input id="title" type="text" name="title" class="form-control"  />
+                </div>
+                <div class="form-group">
+                    <label>URL</label>
+                    <input id="url" type="text" name="url" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Price</label>
+                    <input id="price" type="number" step="any" class="form-control" name="price" required />
+                </div>
+                <div class="form-group">
+                    <label>Priority</label>
+                    <select id="priority" class="form-control" name="priority" required>
+                        <option value="1">High</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Low</option>
+                    </select>
+                </div>            
+            </div>
+            <div class="modal-footer">
+                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel" />
+                <input type="button" id="add-item" class="btn btn-primary" value="Add" />
+            </div>
+        </form>
+    </div>
+</div>
